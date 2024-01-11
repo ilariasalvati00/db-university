@@ -1,0 +1,62 @@
+Query 1
+
+SELECT *
+FROM `students`
+WHERE `students`.`date_of_birth`>= '1990-01-01'
+AND `students`.`date_of_birth` <= '1990-12-31';
+
+
+Query 2
+
+SELECT *
+FROM `courses`
+WHERE `courses`.`cfu` >10;
+
+
+Query 3
+
+SELECT *
+FROM `students`
+WHERE `students`.`date_of_birth` <= '1994-01-10';
+
+
+Query 4
+
+SELECT *
+FROM `courses`
+WHERE `courses`.`period`= 'I semestre'
+AND `courses`.`year`= 1;
+
+
+Query 5
+
+SELECT *
+FROM `exams`
+WHERE `exams`.`hour`>= '14:00:00' 
+AND `exams`.`date`= '2020-06-20';
+
+
+Query 6
+
+SELECT *
+FROM `degrees`
+WHERE `degrees`.`level`= 'magistrale';
+
+
+Query 7
+
+SELECT COUNT(`id`)
+FROM `departments`;
+
+
+Query 8
+
+SELECT COUNT(`id`)
+FROM `departments`;
+
+
+Query 9
+
+SELECT COUNT(`id`)
+FROM `teachers`
+WHERE `teachers`.`phone` IS NULL;
